@@ -109,9 +109,8 @@ function changeBg4(){
 
 window.addEventListener('scroll', changeBg4);
 
-// --Preloader--
-var preloader = document.getElementById("loading");
-
-function myFunction(){
-    preloader.style.display = 'none';
-}
+// --Loader--
+var loader = document.getElementById("pre-loader");
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+});
