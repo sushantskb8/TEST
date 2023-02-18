@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 29th code goes hre, linking the swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+     <!-- 1st code goes here, adding the fav icons -->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <!-- 2nd code goes here, adding box icons from websites -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="myFunction()">
+    <div id="loading"></div>
+    <!-- 8th code goes here, making the header -->
+    <header>
+        <!-- 9th code goes here, making the navbar -->
+        <div class="nav container">
+            <!-- --Logo-- -->
+            <a href="index.html" class="logo">
+                GIETU<span>MOVIES</span>
+            </a>
+
+            <!-- 10th code goes here, making the search box -->
+            <!-- <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="Search movie">
+                <i class='bx bx-search'></i>
+            </div> -->
+            <!-- 11th code goes here, adding the user img -->
+            <a href="#" class="user">
+                <img src="img/user.jpg" alt="" class="user-img">
+            </a>
+
+            <!-- 12th code goes here, making the navbar -->
+            <div class="navbar">
+                
+                <!-- --Adding an unique id in the 'a' tag for color change -->
+                <a href="#home" class="nav-links" id="navbar"> <!-- 15th code goes here, adding the class nav-active,  here it is being removed -->
+                    <i class='bx bx-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                
+                <a href="#popular" class="nav-links" id="navbar1">
+                    <i class='bx bx-money'></i>
+                    <span class="nav-link-title">Tickets</span>
+                </a>
+                
+                <a href="#movies" class="nav-links" id="navbar2">
+                    <i class='bx bx-library'></i>
+                    <span class="nav-link-title">Bookings</span>
+                </a>
+                
+                <a href="play_movie.html" class="nav-links" id="navbar3">
+                    <i class='bx bx-book-content'></i>
+                    <span class="nav-link-title">About</span>
+                </a>
+                
+                <a href="#home" class="nav-links" id="navbar4">
+                    <i class='bx bxs-contact'></i>
+                    <span class="nav-link-title">Contact</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- 18th code goes here, making the home section -->
+    <section class="home container test" id="home">
+        <!-- --Home Image-- -->
+        <img src="img/bg.png" alt="" class="home-img">
+        <!-- --Home Text-- -->
+        <div class="home-text">
+            <h1 class="home-title">MS DHONI: <br>The Untold Story</h1>
+            <p>Realising 10 April</p>
+            <a href="#" class="watch-btn">
+                <i class='bx bxs-hand-up'></i>
+                <span>BOOK</span>
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- 21st code goes here, adding the popular section -->
+    <section class="popular container" id="popular">
+        <!-- --Heading-- -->
+        <div class="heading">
+            <h2 class="heading-title">Recent Realses</h2>
+        </div>
+        <!-- 23rd code goes here, adding the popular content div -->
+        <!-- note: before adding something to this div go 24th step -->
+        <div class="popular-content swiper"> <!--26th code goes here, adding swiper class-->
+            <!-- 27th code goes here, making the swiper-wrapper class -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/movie-1.png" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Sardar</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class="bx bx-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 31st code goes here, just copy the swiper-slide -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/movie-2.png" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Shehzada</h2>
+                            <span class="movie-type">Action/Drama</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class="bx bx-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/movie-3.png" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Pathaan</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class="bx bx-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-3.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Loki</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class="bx bx-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-4.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Squid Game</h2>
+                            <span class="movie-type">Action/Drama</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class="bx bx-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-6.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Hawkeye</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class="bx bx-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- here the these button will be shown on the div side by side, so comment this form here and go to code 38 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <section>
+              <!-- 1st code goes here, making the table content -->
+        <div class="table-container">
+            <div class="heading">Responsive Table</div>
+            <table class="table">
+                <!-- 2nd code goes here, adding the thead -->
+                <thead>
+                    <tr>
+                        <th>S.N.</th>
+                        <th>DAY</th>
+                        <th>REPORTING TIME</th>
+                        <th>SHOW TIME</th>
+                        <th>ALLOWED VISITORS</th>
+                    </tr>
+                </thead>
+
+                <!-- 3rd code goes here, adding the tbody -->
+                <tbody>
+                    <tr>
+                        <td data-label="S.N.">1</td>
+                        <td data-label="DAY">Saturday <br> 11th <br> February</td>
+                        <td data-label="REPORTING TIME">06:00.PM.</td>
+                        <td data-label="SHOW TIME">06:30.PM. <br> to <br> 08:00.PM.</td>
+                        <td data-label="ALLOWED VISITORS"><span class="text_open">All Girls Students <br> & <br> All Ladies & Married Staff</span></td>
+                    </tr>
+
+                    <!-- 4th code goes here, coping the above code -->
+                    <tr>
+                        <td data-label="S.N.">2</td>
+                        <td data-label="DAY">Sunday <br> 12th <br> February</td>
+                        <td data-label="REPORTING TIME">9:00.AM.</td>
+                        <td data-label="SHOW TIME">09:30.AM. <br> to <br> 11:00.AM.</td>
+                        <td data-label="ALLOWED VISITORS"><span class="text_open">All B.Tech 2022 Batch, MCA & BCA (Boys)</span></td>
+
+                    </tr>
+                    <tr>
+                        <td data-label="S.N.">3</td>
+                        <td data-label="DAY">Sunday <br> 12th <br> February</td>
+                        <td data-label="REPORTING TIME">11:30.AM.</td>
+                        <td data-label="SHOW TIME">12:00.PM. <br> to <br> 01:30.PM.</td>
+                        <td data-label="ALLOWED VISITORS"><span class="text_open">All B.Tech 2020 Batch, BSCAG, MSC (Boys)</span></td>
+                    </tr>
+                    <tr>
+                        <td data-label="S.N.">4</td>
+                        <td data-label="DAY">Sunday <br> 12th <br> February</td>
+                        <td data-label="REPORTING TIME">02:30.PM.</td>
+                        <td data-label="SHOW TIME">03:00.PM. <br> to <br> 04:30.PM.</td>
+                        <td data-label="ALLOWED VISITORS"><span class="text_open">All B.Tech 2021 Batch & All Bachelor Gents Staff</span></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 30th code goes here, linkig swiper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- 3rd code goes here, linking to the js -->
+    <script src="js/index.js"></script>
+</body>
+</html>
